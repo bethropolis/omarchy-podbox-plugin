@@ -1,0 +1,59 @@
+{
+  "containers": [
+    {
+      "active": true,
+      "autostart": false,
+      "name": "android",
+      "status": "running"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "arch",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "buf",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "cachy",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "dev",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "dots",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "husky",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "idletest",
+      "status": "stopped"
+    },
+    {
+      "active": false,
+      "autostart": false,
+      "name": "rust-dev",
+      "status": "stopped"
+    }
+  ],
+  "schema": 1
+}

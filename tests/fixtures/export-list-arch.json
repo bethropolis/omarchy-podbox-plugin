@@ -1,0 +1,26 @@
+{
+  "apps": [
+    {
+      "exported": false,
+      "id": "code",
+      "name": null
+    },
+    {
+      "exported": true,
+      "id": "firefox",
+      "name": "Firefox (arch)"
+    },
+    {
+      "exported": true,
+      "id": "foot",
+      "name": "Foot (arch)"
+    },
+    {
+      "exported": false,
+      "id": "zed",
+      "name": null
+    }
+  ],
+  "bins": [],
+  "schema": 1
+}

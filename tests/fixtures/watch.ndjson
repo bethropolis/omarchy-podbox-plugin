@@ -1,0 +1,9 @@
+{"event":"status","name":"android","schema":1,"status":"running"}
+{"event":"status","name":"arch","schema":1,"status":"stopped"}
+{"event":"status","name":"buf","schema":1,"status":"stopped"}
+{"event":"status","name":"cachy","schema":1,"status":"stopped"}
+{"event":"status","name":"dev","schema":1,"status":"stopped"}
+{"event":"status","name":"dots","schema":1,"status":"stopped"}
+{"event":"status","name":"husky","schema":1,"status":"stopped"}
+{"event":"status","name":"idletest","schema":1,"status":"stopped"}
+{"event":"status","name":"rust-dev","schema":1,"status":"stopped"}

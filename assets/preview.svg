@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <radialGradient id="glow" cx="45%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#00b4a0" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#00b4a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11141b"/>
+      <stop offset="1" stop-color="#0b0e13"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161a23"/>
+      <stop offset="1" stop-color="#12151d"/>
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b665c"/>
+      <stop offset="1" stop-color="#102b28"/>
+    </linearGradient>
+    <linearGradient id="pillTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f5"/>
+      <stop offset="1" stop-color="#cdd2dd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="38" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="tileShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#backdrop)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <!-- ============ Panel ============ -->
+  <g filter="url(#shadow)">
+    <rect x="150" y="72" width="1300" height="856" rx="16" fill="url(#panelGrad)" stroke="#262c38" stroke-width="1.5"/>
+  </g>
+
+  <!-- Header -->
+  <g font-family="DejaVu Sans">
+    <g transform="translate(224,116)">
+      <rect width="46" height="15" rx="7.5" fill="url(#pillTop)"/>
+      <rect y="19" width="46" height="15" rx="7.5" fill="url(#pillTop)" opacity="0.62"/>
+    </g>
+    <text x="284" y="142" font-size="31" font-weight="bold" letter-spacing="8" fill="#eceef3">PODBOX</text>
+    <text x="284" y="166" font-size="13" font-weight="bold" letter-spacing="2.5" fill="#3ee2cb">1 OF 9 RUNNING</text>
+
+    <rect x="1300" y="112" width="96" height="46" rx="9" fill="#1d222c" stroke="#333b49" stroke-width="1.5"/>
+    <text x="1348" y="141" font-size="18" fill="#e9ecf2" text-anchor="middle">+ New</text>
+  </g>
+
+  <!-- Rail -->
+  <rect x="200" y="196" width="252" height="430" rx="12" fill="#181d27" stroke="#20263400"/>
+
+  <!-- Rail row: android (selected) -->
+  <rect x="212" y="208" width="228" height="76" rx="10" fill="#00b4a0" fill-opacity="0.12" stroke="#2dd8bf" stroke-width="1.5"/>
+  <circle cx="238" cy="246" r="7.5" fill="#2dd88f"/>
+  <text x="256" y="243" font-size="19" font-weight="bold" fill="#eceef3" font-family="DejaVu Sans">android</text>
+  <text x="256" y="266" font-size="13" fill="#9aa3b4" font-family="DejaVu Sans">running</text>
+
+  <!-- Rail row: arch -->
+  <circle cx="238" cy="330" r="7.5" fill="#5a6272"/>
+  <text x="256" y="327" font-size="19" font-weight="bold" fill="#c7cdd9" font-family="DejaVu Sans">arch</text>
+  <text x="256" y="350" font-size="13" fill="#77808f" font-family="DejaVu Sans">stopped</text>
+
+  <!-- Rail row: buf -->
+  <circle cx="238" cy="414" r="7.5" fill="#5a6272"/>
+  <text x="256" y="411" font-size="19" font-weight="bold" fill="#c7cdd9" font-family="DejaVu Sans">buf</text>
+  <text x="256" y="434" font-size="13" fill="#77808f" font-family="DejaVu Sans">stopped</text>
+
+  <!-- Rail row: cachy -->
+  <circle cx="238" cy="498" r="7.5" fill="#5a6272"/>
+  <text x="256" y="495" font-size="19" font-weight="bold" fill="#c7cdd9" font-family="DejaVu Sans">cachy</text>
+  <text x="256" y="518" font-size="13" fill="#77808f" font-family="DejaVu Sans">stopped</text>
+
+  <!-- Hero -->
+  <clipPath id="heroClip">
+    <rect x="474" y="196" width="976" height="230" rx="14"/>
+  </clipPath>
+  <g>
+    <rect x="474" y="196" width="976" height="230" rx="14" fill="url(#heroGrad)" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.5"/>
+    <g clip-path="url(#heroClip)">
+      <!-- tilted pill decoration, split -->
+      <g transform="translate(1330,232) rotate(-12)" opacity="0.07" fill="#ffffff">
+        <rect x="0" y="0" width="88" height="26" rx="13"/>
+        <rect x="94" y="0" width="88" height="26" rx="13"/>
+      </g>
+    </g>
+    <text x="502" y="288" font-size="40" font-weight="bold" fill="#f5f7fa" font-family="DejaVu Sans">android</text>
+    <text x="502" y="318" font-size="15" font-weight="bold" letter-spacing="3" fill="#3ee2cb" font-family="DejaVu Sans">CACHYOS · UP 17H 14M</text>
+    <text x="502" y="394" font-size="16" fill="#d5dce6" fill-opacity="0.85" font-family="DejaVu Sans">● Running · 35% cpu · 2.6 GiB · 95 procs</text>
+
+    <rect x="1336" y="222" width="92" height="44" rx="9" fill="#1c212b" stroke="#38404f" stroke-width="1.5"/>
+    <text x="1382" y="250" font-size="18" fill="#eceef3" text-anchor="middle" font-family="DejaVu Sans">Stop</text>
+  </g>
+
+  <!-- QUICK ACTIONS -->
+  <text x="474" y="462" font-size="14" font-weight="bold" letter-spacing="3" fill="#8a93a6" font-family="DejaVu Sans">QUICK ACTIONS</text>
+
+  <!-- Tile 1: Terminal -->
+  <rect x="474" y="478" width="304" height="128" rx="12" fill="#1b202a" stroke="#252c38" stroke-width="1.5"/>
+  <g stroke="#e9ecf2" stroke-width="3" stroke-linecap="round" fill="none" transform="translate(600,508)">
+    <path d="M-14 0 L-2 9 L-14 18"/>
+    <path d="M4 18 H18"/>
+  </g>
+  <text x="626" y="576" font-size="16" fill="#dfe4ec" text-anchor="middle" font-family="DejaVu Sans">Terminal</text>
+
+  <!-- Tile 2: Logs -->
+  <rect x="798" y="478" width="304" height="128" rx="12" fill="#1b202a" stroke="#252c38" stroke-width="1.5"/>
+  <g stroke="#e9ecf2" stroke-width="3" stroke-linecap="round" transform="translate(924,506)">
+    <path d="M-16 0 H16"/>
+    <path d="M-16 11 H16"/>
+    <path d="M-16 22 H8"/>
+  </g>
+  <text x="950" y="576" font-size="16" fill="#dfe4ec" text-anchor="middle" font-family="DejaVu Sans">Logs</text>
+
+  <!-- Tile 3: Exports (badge 2) -->
+  <rect x="1122" y="478" width="304" height="128" rx="12" fill="#1b202a" stroke="#252c38" stroke-width="1.5"/>
+  <g transform="translate(1248,510)" stroke="#e9ecf2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M-2 12 V-14"/>
+    <path d="M-13 -3 L-2 -14 L9 -3"/>
+    <path d="M-18 16 H18"/>
+  </g>
+  <rect x="1330" y="492" width="30" height="30" rx="15" fill="#2dd8bf"/>
+  <text x="1345" y="513" font-size="17" font-weight="bold" fill="#0c3530" text-anchor="middle" font-family="DejaVu Sans">2</text>
+  <text x="1274" y="576" font-size="16" fill="#dfe4ec" text-anchor="middle" font-family="DejaVu Sans">Exports</text>
+
+  <!-- Tile 4: Edit config -->
+  <rect x="474" y="626" width="466" height="72" rx="12" fill="#1b202a" stroke="#252c38" stroke-width="1.5"/>
+  <g transform="translate(516,662)" stroke="#e9ecf2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M-10 6 L-4 18 L8 -2 L-4 -8 Z"/>
+    <path d="M4 -4 L10 2"/>
+  </g>
+  <text x="556" y="670" font-size="17" fill="#dfe4ec" font-family="DejaVu Sans">Edit config</text>
+
+  <!-- Tile 5: Restart -->
+  <rect x="960" y="626" width="466" height="72" rx="12" fill="#1b202a" stroke="#252c38" stroke-width="1.5"/>
+  <g transform="translate(1004,662)" stroke="#e9ecf2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M12 0 A12 12 0 1 1 2 -12"/>
+    <path d="M2 -20 V-10 H12"/>
+  </g>
+  <text x="1042" y="670" font-size="17" fill="#dfe4ec" font-family="DejaVu Sans">Restart</text>
+
+  <!-- Footer -->
+  <text x="200" y="888" font-size="14" fill="#6f7787" font-family="DejaVu Sans">podbox</text>
+  <text x="1450" y="888" font-size="14" fill="#6f7787" text-anchor="end" font-family="DejaVu Sans">podbox v0.9.3-1-gb5a8948</text>
+</svg>

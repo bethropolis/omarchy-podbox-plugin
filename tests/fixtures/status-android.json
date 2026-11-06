@@ -1,0 +1,8 @@
+{
+  "base_image": "cachyos/cachyos:latest",
+  "installed": true,
+  "name": "android",
+  "schema": 1,
+  "started_at": "2026-11-03T16:43:53.891450336+03:00",
+  "status": "running"
+}

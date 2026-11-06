@@ -1,0 +1,14 @@
+[
+ {
+  "id": "7c7b5b3189df",
+  "name": "android",
+  "cpu_time": "4h44m42.423536s",
+  "cpu_percent": "34.96%",
+  "avg_cpu": "34.96%",
+  "mem_usage": "2.808GB / 7.955GB",
+  "mem_percent": "35.29%",
+  "net_io": "257.6MB / 2.323GB",
+  "block_io": "0B / 0B",
+  "pids": "95"
+ }
+]

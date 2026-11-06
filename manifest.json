@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.bethropolis.podbox",
+  "name": "Podbox",
+  "version": "0.1.0",
+  "author": "bethropolis",
+  "license": "MIT",
+  "description": "Manage podbox environments from the Omarchy bar.",
+  "homepage": "https://github.com/bethropolis/omarchy-podbox-plugin",
+  "repository": "https://github.com/bethropolis/omarchy-podbox-plugin.git",
+  "keywords": [
+    "podbox",
+    "podman",
+    "container",
+    "linux"
+  ],
+  "kinds": [
+    "bar-widget",
+    "overlay"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "overlay": "ExportsOverlay.qml"
+  },
+  "barWidget": {
+    "displayName": "Podbox",
+    "description": "Podbox environments: running count, status panel, exports",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "osColors": "fedora=#3c6eb4,arch=#1793d1,ubuntu=#e95420,debian=#d70a53,alpine=#0d597f,cachy=#00b4a0,nixos=#7ebae4,opensuse=#73ba25,default=#6366f1"
+    },
+    "schema": [
+      {
+        "key": "osColors",
+        "type": "string",
+        "label": "OS colors",
+        "defaultValue": "fedora=#3c6eb4,arch=#1793d1,ubuntu=#e95420,debian=#d70a53,alpine=#0d597f,cachy=#00b4a0,nixos=#7ebae4,opensuse=#73ba25,default=#6366f1",
+        "description": "Comma-separated name=#hex pairs used to colour the hero card per distro."
+      }
+    ]
+  }
+}
